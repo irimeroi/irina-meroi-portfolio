@@ -1,0 +1,29 @@
+:root {
+  --pink: rgb(253, 211, 189);
+  --green: rgb(130, 149, 121);
+}
+
+nav {
+  display: inline;
+  height: 50px;
+  margin: 10px;
+}
+
+div.navbtns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  /* padding: 10px; */
+}
+
+#main-btn {
+  border: solid 1px;
+  background-color: var(--green);
+  padding: 10px;
+}
+
+.nav-btn {
+  border: 1px solid white;
+  padding: 10px;
+}
+

@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 } */
+
+:root {
+  --pink: rgb(253, 211, 189);
+  --green: rgb(130, 149, 121);
+}
+
+* {
+  background-color: var(--pink);
+  color: white;
+  /* border: red 1px dashed; */
+}
