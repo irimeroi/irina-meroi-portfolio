@@ -3,3 +3,7 @@ function Resume () {
 }
 
 export default Resume;
+
+//upload as a pdf in google drive
+//grab the share link
+// a tag href share link
