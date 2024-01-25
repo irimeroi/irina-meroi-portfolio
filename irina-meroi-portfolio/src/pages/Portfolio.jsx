@@ -1,53 +1,43 @@
-// import React from 'react';
-// import { useState } from 'react';
-// import Carousel from 'react-bootstrap/Carousel';
-// // import ExampleCarouselImage from 'components/ExampleCarouselImage';
+import React from 'react';
+import './Portfolio.css';
+import { useState } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
 
-// function Portfolio() {
-//     const [index, setIndex] = useState(0);
+function Portfolio() {
+    const [index, setIndex] = useState(0);
 
-//     const handleSelect = (selectedIndex) => {
-//         setIndex(selectedIndex);
-//     };
+    const handleSelect = (selectedIndex) => {
+        setIndex(selectedIndex);
+    };
 
-//     return (
-//         <Carousel activeIndex={index} onSelect={handleSelect}>
-//             <Carousel.Item>
-//                 <img className='d-block w-100' src='irina-meroi-portfolio/irina-meroi-portfolio/src/assets/images/Recipes.png' />
-//                 <Carousel.Caption>
-//                     <h3>First slide label</h3>
-//                     <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-//                 </Carousel.Caption>
-//             </Carousel.Item>
-//             <Carousel.Item>
-//                 <ExampleCarouselImage text="Second slide" />
-//                 <Carousel.Caption>
-//                     <h3>Second slide label</h3>
-//                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//                 </Carousel.Caption>
-//             </Carousel.Item>
-//             <Carousel.Item>
-//                 <ExampleCarouselImage text="Third slide" />
-//                 <Carousel.Caption>
-//                     <h3>Third slide label</h3>
-//                     <p>
-//                         Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-//                     </p>
-//                 </Carousel.Caption>
-//             </Carousel.Item>
-//         </Carousel>
-//     );
-// }
-
-function Portfolio () {
     return (
         <div>
-            <img className='images' src="src/assets/images/Travel-with-me.png" />
-            <img className='images' src='src/assets/images/Recipes.png' />
-            <img className='images' src="src/assets/images/Tech-blog.png" />
+            <h2 className='h2'>Click on the slide to view all my projects!</h2>
+            <Carousel id='carousel' activeIndex={index} onSelect={handleSelect}>
+                <Carousel.Item className='item'>
+                    <img className='images' src="src/assets/images/Travel-with-me.png" />
+                    <Carousel.Caption className='caption'>
+                        <h3 className='h3' >Travel With Me: a social media platform</h3>
+                        <a href='https://pure-anchorage-91977-4dec50670cac.herokuapp.com/'>Check out the app here!</a>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img className='images' src='src/assets/images/Recipes.png' />
+                    <Carousel.Caption className='caption'>
+                        <h3>Wine and Dine</h3>
+                        <a href='https://irimeroi.github.io/recipes-api/'>Check out the app here!</a>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img className='images' src="src/assets/images/Tech-blog.png" />
+                    <Carousel.Caption className='caption'>
+                        <h3>Tech Blog</h3>
+                        <a href='https://irimeroi.github.io/recipes-api/'></a>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
         </div>
-        
-    )
+    );
 }
 
 export default Portfolio;

@@ -16,7 +16,7 @@ function ContactInfo() {
                 <Form.Label className='form-label'>Message</Form.Label>
                 <Form.Control id="text-area" as="textarea" rows={3} />
             </Form.Group>
-            <button type='submit'>Submit</button>
+            <button id='submit-form'>Submit</button>
         </Form>
     )
 }

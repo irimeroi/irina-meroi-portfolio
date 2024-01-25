@@ -1,4 +1,43 @@
-#add-name {
+:root {
+    --pink: rgb(253, 211, 189);
+    --green: rgb(130, 149, 121);
+  }
+
+#mypic {
+    display: inline-block;
+    width: 10%;
+    height: 150px;
+}
+
+#backgr {
+    display: inline-block;
+    background-size: cover;
+    background-position: center;
+    width: 89%;
+    height: 150px;
+}
+
+#add-name-form {
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+
+.h2-p-form {
+    display: flex;
+    justify-content: center;
+}
+
+#input-name {
+    border: 1px solid var(--pink);
+    background-color: white;
+}
+
+.about-me {
+    display: inline-block;
+    margin: 30px 60px;
+}
+
+.about-p {
+    display: flex;
 }
