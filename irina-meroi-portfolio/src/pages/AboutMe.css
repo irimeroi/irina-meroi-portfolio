@@ -1,6 +1,8 @@
 :root {
     --pink: rgb(253, 211, 189);
-    --green: rgb(130, 149, 121);
+  --pink2: rgb(217, 174, 174);
+  --green: rgb(130, 149, 121);
+  --green2: rgb(117, 158, 143);
   }
 
 #mypic {
@@ -21,6 +23,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    padding-top: 80px;
 }
 
 .h2-p-form {

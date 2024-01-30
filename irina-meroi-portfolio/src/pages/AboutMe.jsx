@@ -11,21 +11,9 @@ function AboutMe() {
         event.preventDefault();
         setName(event.target.value)
     }
-    // const handleUserName = (event) => {
-    //     event.preventDefault();
-    //     setUserName(true)
-    // }
 
     return (
         <main>
-            {/* <form id="add-name-form">
-                <div>
-                    {name ?
-                        (<h1 className="h2-p-form" >Hi {name}, welcome to my portfolio!</h1>) :
-                        (<h1 className="h2-p-form" >Hi, welcome to my portfolio!</h1>)}
-                    <p className="h2-p-form" ><label>What's your name? <input id="input-name" onChange={handleUserTyping} type="text" name="name" /></label></p>
-                </div>
-            </form> */}
             <img id="backgr" src="src/assets/images/background.png" />
             <img id="mypic" src="src/assets/images/im.png" />
             <form id="add-name-form">

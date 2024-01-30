@@ -15,6 +15,3 @@ function Navbar1(props) {
 }
 
 export default Navbar1;
-
-//location.pathname
-//window.href
