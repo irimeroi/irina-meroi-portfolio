@@ -1,5 +1,0 @@
-export function validateEmail(email) {
-    // Define a regular expression pattern for email validation.
-    const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    return pattern.test(String(email).toLowerCase());
-  }
