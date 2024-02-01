@@ -1,11 +1,149 @@
 :root {
   --pink: rgb(253, 211, 189);
-  --pink2: rgb(217, 174, 174);
+  --pink2: rgb(238, 233, 233);
   --green: rgb(130, 149, 121);
-  --green2: rgb(117, 158, 143);
+  --green2: rgb(227, 232, 223);
 }
 
 * {
   background-color: var(--green);
   color: white;
+}
+
+/* navigation bar */
+nav {
+  margin: 10%;
+}
+
+#main-btn {
+  border: solid 1px white;
+  padding: 0.7%;
+  background: linear-gradient(-45deg, var(--pink), var(--pink2), var(--pink), var(--pink2));
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+.nav-btn {
+  padding: 0.7%;
+  background: linear-gradient(-45deg, var(--green), var(--green2), var(--green), var(--green2));
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* about me section */
+#mypic {
+  display: inline-block;
+  width: 150px;
+  /* width: 15%; */
+  height: 150px;
+  padding-top: 10px;
+}
+
+#backgr-pic {
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  width: 89%;
+  height: 150px;
+  padding-top: 10px;
+}
+
+#add-name-form {
+  width: 100%;
+  padding-top: 50px;
+}
+
+#input-name {
+  border: 1px solid var(--pink);
+  background-color: white;
+}
+
+.about-me {
+  margin: 30px 60px;
+  text-align: justify;
+}
+
+/* portfolio */
+#carousel {
+  /* margin: 5vh 5vw; */
+  margin: 2% 7%;
+}
+
+.images {
+  width: 100vw;
+}
+
+.caption {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+div.carousel-indicators {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Contact me */
+Form {
+  padding: 10px 20%;
+}
+
+#submit-form {
+  background-color: var(--pink);
+  border: var(--pink);
+  margin: 20px;
+}
+
+.text-area {
+  height: 300px;
+}
+
+/* footer icons */
+.icon {
+  height: 30px;
+  width: 30px;
+  margin: 0 5px;
+}
+
+footer {
+  background-color: var(--green);
+}
+
+/* 460 */
+@media screen and (max-width: 531px) {
+  #mypic {
+    width: 110px;
+    height: 110px;
+    margin: 1% 40%;
+  }
+
+  #backgr-pic {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 532px) and (max-width: 1363px) {
+  #mypic {
+    width: 110px;
+    height: 110px;
+    margin: 1% 45%;
+  }
+
+  #backgr-pic {
+    width: 100%;
+    height: 100px;
+  }
 }

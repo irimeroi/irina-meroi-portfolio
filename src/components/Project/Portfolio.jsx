@@ -1,5 +1,3 @@
-import React from 'react';
-import './Portfolio.css';
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
@@ -12,9 +10,9 @@ function Portfolio() {
 
     return (
         <div>
-            <h2 className='h2'>Click on the slide to view all my projects!</h2>
+            <h2 className='d-flex justify-content-center'>Click on the slide to view all my projects!</h2>
             <Carousel id='carousel' activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item className='item'>
+                <Carousel.Item>
                     <img className='images' src="src/assets/images/Travel-with-me.png" />
                     <Carousel.Caption className='caption'>
                         <h3 className='h3' >Travel With Me: a social media platform</h3>
