@@ -7,13 +7,13 @@ This project contains my professional portfolio which was created using React. I
 ![](./src/assets/images/Portfolio.png)
 
 ## Link
-
+https://main--comforting-truffle-f29dad.netlify.app/
 
 ## Installation
 N/A
 
 ## Usage
-My portfolio can be used by accessing it through the repository located in my GitHub account, or the link provided above. It redirects users to the home page of the portfolio, which provides a little description about me and a picture. From there, the porfolio link in the navigation contains images of some of the projects I've created or participated in, as well as the links of the deployed applications and the GitHub repository. In the navigation section it can also be found a path to my resume, where a copy of it can we download, and to a contact me section, where a fom can be filled in to make life easier. In the footer section of the website, links to my GitHub account, my LinkedIn account and my email are provided.
+My portfolio can be used by accessing it through the repository located in my GitHub account, or the link provided above. It redirects users to the home page of the portfolio, which provides a little description about me and a picture. From there, the porfolio link in the navigation contains images of some of the projects I've created or participated in, as well as the links of the deployed applications and their corresponding GitHub repository. In the navigation section, it can also be found a path to my resume (with the option to download a copy), and to a contact me section, where a form can be filled in with any message the user would like to send me. In the footer section of the website, links to my GitHub account, my LinkedIn account and my twitter account are provided.
 
 ## License
 None

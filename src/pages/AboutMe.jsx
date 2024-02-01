@@ -15,8 +15,8 @@ function AboutMe() {
     return (
         <main>
             <div className="d-flex flex-wrap pt-2">
-                <img id="backgr-pic" className="" src="src/assets/images/background.png" />
-                <img id="mypic" src="src/assets/images/im.png" />
+                <img id="backgr-pic" className="" src="assets/images/background.png" />
+                <img id="mypic" src="assets/images/im.png" />
             </div>
             <form id="add-name-form" className="d-flex justify-content-center">
                 <div>
