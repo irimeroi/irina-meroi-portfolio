@@ -4,7 +4,7 @@
 This project contains my professional portfolio which was created using React. It includes a little description and a picture of me, my contact information, screenshots and the links to the GitHub repositories and websites I created/worked on, and a section providing my resume.
 
 ## Screenshots
-![](./src/assets/images/Portfolio.png)
+![](./public/assets/images/Portfolio.png)
 
 ## Link
 https://main--comforting-truffle-f29dad.netlify.app/
