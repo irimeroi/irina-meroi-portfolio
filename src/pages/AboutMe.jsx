@@ -15,15 +15,18 @@ function AboutMe() {
     return (
         <main>
             <div className="d-flex flex-wrap pt-2">
-                <img id="backgr-pic" className="" src="assets/images/background.png" />
+                <img id="backgr-pic" src="assets/images/background.png" />
                 <img id="mypic" src="assets/images/im.png" />
             </div>
-            <form id="add-name-form" className="d-flex justify-content-center">
+            <form id="add-name-form">
                 <div>
+                    <div className="border-name border p-3">
+                        <p className="text-center">Yes, i'm trying to get a job in technology, but I really value human connection, so, first things first!</p>
+                        <p className="text-center"><label>What's your name? <input id="input-name" onChange={handleUserTyping} type="text" name="name" /></label></p>
+                    </div>
                     {name ?
-                        (<h1 className="d-flex justify-content-center" >Hi {name}, welcome to my portfolio!</h1>) :
-                        (<h1 className="d-flex justify-content-center" >Hi, welcome to my portfolio!</h1>)}
-                    <p className="d-flex justify-content-center" ><label>What's your name? <input id="input-name" onChange={handleUserTyping} type="text" name="name" /></label></p>
+                        (<h1 className="text-center p-3" >Hi {name}, welcome to my portfolio!</h1>) :
+                        (<h1 className="text-center p-3" >Hi, welcome to my portfolio!</h1>)}
                 </div>
             </form>
             <div className="about-me" >
