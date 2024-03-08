@@ -20,13 +20,16 @@ function AboutMe() {
             </div>
             <form id="add-name-form">
                 <div>
-                    <div className="border-name border p-3">
+                    <div>
                         <p className="text-center">Yes, i'm trying to get a job in technology, but I really value human connection, so, first things first!</p>
                         <p className="text-center"><label>What's your name? <input id="input-name" onChange={handleUserTyping} type="text" name="name" /></label></p>
                     </div>
-                    {name ?
-                        (<h1 className="text-center p-3" >Hi {name}, welcome to my portfolio!</h1>) :
-                        (<h1 className="text-center p-3" >Hi, welcome to my portfolio!</h1>)}
+                    <div className="border-name border">
+                        {name ?
+                            (<h1 className="border-name text-center" >Hi {name}, welcome to my portfolio!</h1>) :
+                            (<h1 className="border-name text-center" >Hi, welcome to my portfolio!</h1>)}
+                    </div>
+
                 </div>
             </form>
             <div className="about-me" >
