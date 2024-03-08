@@ -77,6 +77,13 @@ nav {
   text-align: justify;
 }
 
+.border-name {
+  background: linear-gradient(-45deg, var(--green), var(--green2), var(--green), var(--green2));
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  margin: 20px;
+}
+
 /* portfolio */
 #carousel {
   /* margin: 5vh 5vw; */
