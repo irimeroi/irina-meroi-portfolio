@@ -1,6 +1,6 @@
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from '../../utils/helpers';
 
 function ContactInfo() {
     const [info, setInfo] = useState({ name: '', email: '', message: ''});

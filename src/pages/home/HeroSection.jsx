@@ -1,7 +1,9 @@
-import { useState, useEffect } from "react";
-import { capitalizeFirstLetter } from '../utils/helpers';
+//HeroSection: first thing people see when they access your website
 
-function AboutMe() {
+import { useState, useEffect } from "react";
+import { capitalizeFirstLetter } from '../../utils/helpers';
+
+function HeroSection() {
     useEffect(() => {
         document.title = 'Irina Meroi\'s portfolio';
     })
@@ -40,4 +42,4 @@ function AboutMe() {
     )
 }
 
-export default AboutMe;
+export default HeroSection;
