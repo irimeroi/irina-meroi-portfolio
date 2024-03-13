@@ -1,6 +1,6 @@
 function Resume() {
     return (
-        <section>
+        <section id="skills">
             <div className='p-5 d-flex justify-content-around flex-wrap'>
                 <div className='p-3 border'>
                     <h2><u>Front-end Proficiencies</u></h2>

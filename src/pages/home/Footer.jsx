@@ -3,7 +3,7 @@ function Footer() {
         <footer className="footer fixed-bottom mt-5 text-center">
             <a href="https://www.linkedin.com/in/irina-meroi-385bbb245/"><img src="assets/logos/Linkedin.png" alt="LinkedIn" className="icon" /></a>
             <a href="https://github.com/irimeroi"><img src="assets/logos/github-mark-white.png" alt="Github" className="icon" /></a>
-            <a href="mailto:irimeroi7@gmail.com"><i class="fa-sharp fa-solid fa-envelope fa-lg icon"></i></a>
+            <a href="mailto:irimeroi7@gmail.com"><i className="fa-sharp fa-solid fa-envelope fa-lg icon"></i></a>
         </footer>
     )
 }
