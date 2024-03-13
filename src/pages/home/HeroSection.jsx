@@ -18,7 +18,6 @@ function HeroSection() {
         <main>
             <div className="d-flex flex-wrap pt-2">
                 <img id="backgr-pic" src="assets/images/background.png" />
-                <img id="mypic" src="assets/images/im.png" />
             </div>
             <form id="add-name-form">
                 <div>
@@ -35,7 +34,8 @@ function HeroSection() {
                 </div>
             </form>
             <div className="about-me" >
-                <h2>About me</h2>
+                <h2 className="text-center">About me</h2>
+                <img id="mypic" src="assets/images/im.png" />
                 <p>I enjoy working in environments that push me to learn new skills quickly, solve problems creatively, develop innovative strategies with a team, and never become complacent. I consider myself a very passionate and outgoing person, who over the years have discovered the power of patience and perseverance, the drive to exit my comfort zones, the strength to overcome adversity, and most importantly, the value of humility and gratitude.</p>
             </div>
         </main>

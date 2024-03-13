@@ -12,20 +12,34 @@
 
 /* navigation bar */
 nav {
-  margin: 10%;
+  min-height: 10vh;
+}
+
+.nav-links {
+  width: 40%;
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+.bars-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-btns {
+  background: linear-gradient(-45deg, var(--green), var(--green2), var(--green), var(--green2));
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  color: white;
 }
 
 #main-btn {
   border: solid 1px white;
   padding: 0.7%;
   background: linear-gradient(-45deg, var(--pink), var(--pink2), var(--pink), var(--pink2));
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-}
-
-.nav-btn {
-  padding: 0.7%;
-  background: linear-gradient(-45deg, var(--green), var(--green2), var(--green), var(--green2));
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
@@ -129,7 +143,7 @@ footer {
 }
 
 /* 460 */
-@media screen and (max-width: 531px) {
+@media all and (max-width: 531px) {
   #mypic {
     width: 110px;
     height: 110px;
@@ -139,6 +153,29 @@ footer {
   #backgr-pic {
     width: 100%;
     height: 100px;
+  }
+
+  .nav-links {
+    position: absolute;
+    display: block;
+    height: 40vh;
+    flex-direction: column;
+    top: 60px;
+    right: 0;
+    transform: translateX(300px);
+  }
+
+  .nav-btns {
+    padding: 10px;
+    background: var(--green);
+  }
+
+  .nav-btns:hover {
+    color: var(--pink);
+  }
+
+  .bars-icon {
+    display: block;
   }
 }
 
