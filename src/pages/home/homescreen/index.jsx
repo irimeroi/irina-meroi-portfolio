@@ -8,8 +8,8 @@ export default function Home() {
         <>
             <HeroSection />
             <Portfolio />
-            <ContactMe />
             <Resume />
+            <ContactMe />
         </>
     );
 }

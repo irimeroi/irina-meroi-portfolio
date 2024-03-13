@@ -33,7 +33,7 @@ function ContactInfo() {
       }
 
     return (
-        <Form noValidate validated={validated} onSubmit={handleSubmit} >
+        <Form noValidate validated={validated} onSubmit={handleSubmit} id="contact" >
             <Form.Group className="pt-2" controlId="exampleForm.ControlInput1">
                 <Form.Label className='pt-4'>Name</Form.Label>
                 <Form.Control type="text" placeholder="Your name here" name="name" required />

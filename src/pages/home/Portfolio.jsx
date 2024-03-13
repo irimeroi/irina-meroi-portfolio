@@ -9,7 +9,7 @@ function Portfolio() {
     };
 
     return (
-        <div>
+        <div id="portfolio">
             <h2 className='d-flex justify-content-center'>Click on the slide to view all my projects!</h2>
             <Carousel id='carousel' activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
