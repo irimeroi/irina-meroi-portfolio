@@ -1,8 +1,8 @@
 function Skills() {
     return (
-        <section id="skills" className="skills">
-            <h3 className="text-center">Skills</h3>
-            <ul className="skills-ul d-flex justify-content-around flex-wrap">
+        <section className="skills">
+            <h3 className="text-center" id="skills">Skills</h3>
+            <ul className="skills-ul">
                 <li className="skills-ul-li">CSS</li>
                 <li className="skills-ul-li">Bootstrap</li>
                 <li className="skills-ul-li">JavaScript</li>
