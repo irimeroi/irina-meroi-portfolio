@@ -4,7 +4,7 @@ function Navbar() {
     const [display, setDisplay] = useState(false);
 
     return (
-        <nav className="d-flex justify-content-around align-items-center">
+        <nav className="d-flex justify-content-around align-items-center fixed-top">
             <ul className="nav-btns d-flex justify-content-around" style={{ transform: display ? "translateX(0px)" : "" }}>
                 <li><a href="/#about" className="nav-links">About</a></li>
                 <li><a href="/#portfolio" className="nav-links">Portfolio</a></li>

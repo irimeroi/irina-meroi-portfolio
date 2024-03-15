@@ -11,11 +11,10 @@
   margin: 0;
 }
 
-/* navigation bar */
+/* NAVBAR */
 nav {
   min-height: 10vh;
   /* position: fixed; */
-  top: 0;
   width: 100%;
 }
 
@@ -47,7 +46,7 @@ li {
   cursor: pointer;
 }
 
-/* herosection */
+/* HEROSECTION */
 .hs-main {
   height: 100vh;
 }
@@ -55,9 +54,8 @@ li {
 .hs-main-name {
   width: 30%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 10%;
   padding: 10px 0;
-  font-size: 30px;
   border: 1px solid white;
   border-radius: 10px;
   background: linear-gradient(-45deg, var(--pink), var(--pink2), var(--pink), var(--pink2));
@@ -68,7 +66,7 @@ li {
 .hs-main-title {
   width: 40%;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 3%;
   border: 1px solid white;
   border-radius: 10px;
   padding: 10px;
@@ -94,9 +92,9 @@ li {
   }
 }
 
-.hs-main-nameform {
+.hs-main-welcome_form {
   width: 100%;
-  padding-top: 6%;
+  margin-top: 7%;
 }
 
 .hs-main-inputname {
@@ -106,20 +104,14 @@ li {
 }
 
 .hs-main-welcomeText {
-  /* border: 1px solid white; */
-  /* border-radius: 10px; */
-  /* color: var(--green2); */
-  /* padding: 20px; */
-  margin-top: 10%;
-  border: 1px solid white;
-  border-radius: 10px;
+  color: var(--pink);
+  margin: 0 auto;
+  width: 55%;
+  margin-top: 3%;
   padding: 10px;
-  background: linear-gradient(-45deg, var(--green), var(--green2), var(--green), var(--green2));
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
 }
 
-/* about me section */
+/* ABOUT ME SECTION */
 #about {
   height: 100vh;
 }
@@ -143,7 +135,7 @@ li {
 }
 
 .about-icons {
-  text-align: center;
+  /* text-align: center; */
   height: 30px;
   width: 30px;
   margin: 0 20px;
@@ -166,66 +158,73 @@ li {
   margin: 5% ;
 }
 
-/* portfolio */
-#carousel {
-  /* margin: 5vh 5vw; */
-  margin: 2% 7%;
-}
-
+/* PORTFOLIO SECTION */
 #portfolio {
   height: 100vh;
-
 }
 
-.images {
-  width: 100vw;
+.portfolio-carousel {
+  background-color: var(--pink);
 }
 
-.caption {
-  background: rgba(0, 0, 0, 0.1);
+.portfolio-carousel-images {
+  width: 100%;
+  padding: 5%;
 }
 
-div.carousel-indicators {
+.portfolio-carousel-caption {
   background: rgba(0, 0, 0, 0);
 }
 
-/* Skills section */
-#skills {
-  height: 100vh;
+.portfolio-carousel-caption-text {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.carousel-indicators {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* SKILLS SECTION */
+.skills {
+  margin: 5%;
 }
 
 .skills-ul {
   margin: 2% 20%;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills-ul-li {
   border: 1px solid white;
   padding: 20px 30px;
   margin: 3%;
+  flex-grow: 1;
+  width: 33%; 
+  height: 100px;
 }
 
-/* Contact me */
-Form {
-  padding: 10px 20%;
+/* CONTACT SECTION */
+.contact-form {
+  padding: 5% 20%;
+  padding-bottom: 10%;
 }
 
-#submit-form {
+.contact-form-textarea {
+  height: 300px;
+}
+
+#submit-form-btn {
   background-color: var(--pink);
   border: var(--pink);
   margin: 20px;
 }
 
-.text-area {
-  height: 300px;
-}
-
-/* footer icons */
-.icon {
-  height: 30px;
-  width: 30px;
-  margin: 0 5px;
-}
-
+/* FOOTER SECTION */
 footer {
   background-color: var(--green);
 }
