@@ -15,31 +15,17 @@ function HeroSection() {
     }
 
     return (
-        <main>
-            <section id="main-sec">
-                <h2 className="text-center">Full Stack Web Developer</h2>
-                <form id="add-name-form">
-                    <div>
-                        <div>
-                            <p className="text-center">Yes, I wanna work in tech, but I really value human connection, so, first things first!</p>
-                            <p className="text-center"><label>What's your name? <input id="input-name" onChange={handleUserTyping} type="text" name="name" /></label></p>
-                        </div>
-                        <div className="border-name border">
-                            {name ?
-                                (<h1 className="border-name text-center" >Hi {name}, welcome to my portfolio!</h1>) :
-                                (<h1 className="border-name text-center" >Hi, welcome to my portfolio!</h1>)}
-                        </div>
-                    </div>
-                </form>
-                <i className="fa-solid fa-arrow-down-long d-flex justify-content-center p-5"></i>
-            </section>
-            <section id="about">
-                <div className="about-me">
-                    <h2 className="text-center">About me</h2>
-                    <img id="mypic" src="assets/images/im.png" />
-                    <p className="mw-75">I enjoy working in environments that push me to learn new skills quickly, solve problems creatively, develop innovative strategies with a team, and never become complacent. I consider myself a very passionate and outgoing person, who over the years have discovered the power of patience and perseverance, the drive to exit my comfort zones, the strength to overcome adversity, and most importantly, the value of humility and gratitude.</p>
-                </div>
-            </section>
+        <main className="hs-main text-center">
+            <h2 className="hs-main-name">Irina Meroi</h2>
+            <h2 className="hs-main-title">Full Stack Web Developer</h2>
+            <form className="hs-main-nameform">
+                <p className="text-center">Yes, I wanna work in tech, but I really value human connection, so, first things first!</p>
+                <p className="text-center"><label>What's your name? <input className="hs-main-inputname" onChange={handleUserTyping} type="text" name="name" /></label></p>
+                {name ?
+                    (<h1 className="hs-main-welcomeText text-center" >Hi {name}, welcome to my portfolio!</h1>) :
+                    (<h1 className="hs-main-welcomeText text-center" >Hi, welcome to my portfolio!</h1>)}
+            </form>
+            <i className="fa-solid fa-arrow-down-long d-flex justify-content-center p-5"></i>
         </main>
     )
 }
