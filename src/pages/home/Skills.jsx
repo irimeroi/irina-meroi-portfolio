@@ -1,0 +1,26 @@
+function Skills() {
+    return (
+        <section id="skills" className="skills">
+            <h3 className="text-center">Skills</h3>
+            <ul className="skills-ul d-flex justify-content-around flex-wrap">
+                <li className="skills-ul-li">CSS</li>
+                <li className="skills-ul-li">Bootstrap</li>
+                <li className="skills-ul-li">JavaScript</li>
+                <li className="skills-ul-li">jQuery</li>
+                <li className="skills-ul-li">React</li>
+                <li className="skills-ul-li">Node</li>
+                <li className="skills-ul-li">Express</li>
+                <li className="skills-ul-li">Restful APIs</li>
+                <li className="skills-ul-li">MySQL</li>
+                <li className="skills-ul-li">Sequelize</li>
+                <li className="skills-ul-li">MongoDB</li>
+                <li className="skills-ul-li">Mongoose</li>
+                <li className="skills-ul-li">GraphQL</li>
+                <li className="skills-ul-li">Github</li>
+                <li className="skills-ul-li">Python</li>
+            </ul>
+        </section>
+    )
+}
+
+export default Skills;

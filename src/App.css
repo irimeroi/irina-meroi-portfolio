@@ -23,38 +23,61 @@ nav {
   padding-top: 60px;
 } */
 
-.nav-links {
+.nav-btns {
   width: 40%;
   cursor: pointer;
+}
+
+.nav-links {
+  color: white;
+}
+
+.nav-links:hover {
+  color: var(--pink);
+  font-size: 20px;
+  transition: all 500ms;
 }
 
 li {
   list-style-type: none;
 }
 
-.bars-icon {
+.nav-icon {
   display: none;
   cursor: pointer;
 }
 
-.nav-btns {
-  color: white;
-  text-decoration: none;
+/* herosection */
+.hs-main {
+  height: 100vh;
 }
 
-.nav-btns:hover {
-  color: var(--pink);
-  font-size: 20px;
-  transition: all 500ms;
-}
-
-#main-btn {
-  border: solid 1px white;
-  font-size: 20px;
-  padding: 1.5%;
+.hs-main-name {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px 0;
+  font-size: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
   background: linear-gradient(-45deg, var(--pink), var(--pink2), var(--pink), var(--pink2));
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
+}
+
+.hs-main-title {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(-45deg, var(--green), var(--green2), var(--green), var(--green2));
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  /* background: linear-gradient(-45deg, var(--pink), var(--pink2), var(--pink), var(--pink2));
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite; */
 }
 
 @keyframes gradient {
@@ -71,24 +94,42 @@ li {
   }
 }
 
-/* herosection */
-#main-sec {
-  height: 100vh;
-}
-
-#add-name-form {
+.hs-main-nameform {
   width: 100%;
-  padding-top: 10%;
+  padding-top: 6%;
 }
 
-#input-name {
+.hs-main-inputname {
   border: 1px solid var(--pink);
   background-color: white;
   color: var(--pink);
 }
 
+.hs-main-welcomeText {
+  /* border: 1px solid white; */
+  /* border-radius: 10px; */
+  /* color: var(--green2); */
+  /* padding: 20px; */
+  margin-top: 10%;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(-45deg, var(--green), var(--green2), var(--green), var(--green2));
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
 /* about me section */
-#mypic {
+#about {
+  height: 100vh;
+}
+
+.about {
+  margin: 2% 10%;
+  text-align: justify;
+}
+
+.about-mypic {
   display: block;
   width: 150px;
   height: 150px;
@@ -97,20 +138,32 @@ li {
   border-radius: 30%;
 }
 
-#about {
-  height: 100vh;
+.about-li {
+  margin: 1%;
 }
 
-.about-me {
-  margin: 0 10%;
-  text-align: justify;
+.about-icons {
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  margin: 0 20px;
 }
 
-.border-name {
-  background: linear-gradient(-45deg, var(--green), var(--green2), var(--green), var(--green2));
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-  margin: 20px;
+.about-downloadResume {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.about-resumeLink {
+  text-decoration: none;
+  color: white;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.about-ph {
+  margin: 5% ;
 }
 
 /* portfolio */
@@ -141,6 +194,16 @@ div.carousel-indicators {
   height: 100vh;
 }
 
+.skills-ul {
+  margin: 2% 20%;
+}
+
+.skills-ul-li {
+  border: 1px solid white;
+  padding: 20px 30px;
+  margin: 3%;
+}
+
 /* Contact me */
 Form {
   padding: 10px 20%;
@@ -169,29 +232,35 @@ footer {
 
 /* 460 */
 @media all and (max-width: 531px) {
-  .nav-links {
+  .nav-btns {
     position: absolute;
     display: block;
-    height: 40vh;
+    height: 30vh;
     flex-direction: column;
     top: 60px;
     right: 0;
-    transform: translateX(300px);
+    transform: translateX(-600px);
+    border: 1px solid white;
+    border-radius: 10px;
   }
 
-  .nav-btns {
+  .nav-links {
     padding: 10px;
     background: var(--green);
+    font-size: 15px;
   }
 
-  .nav-btns:hover {
+  .nav-links:hover {
     color: var(--pink);
-    font-size: 25px;
     transition: all 500ms;
   }
 
-  .bars-icon {
+  .nav-icon {
     display: block;
+    margin-left: 60%;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
   }
 }
 
