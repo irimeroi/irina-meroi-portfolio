@@ -13,8 +13,7 @@
 
 /* NAVBAR */
 nav {
-  min-height: 10vh;
-  /* position: fixed; */
+  min-height: 8vh;
   width: 100%;
 }
 
@@ -54,7 +53,7 @@ li {
 .hs-main-name {
   width: 30%;
   margin: 0 auto;
-  margin-top: 10%;
+  margin-top: 12%;
   padding: 10px 0;
   border: 1px solid white;
   border-radius: 10px;
@@ -73,9 +72,6 @@ li {
   background: linear-gradient(-45deg, var(--green), var(--green2), var(--green), var(--green2));
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
-  /* background: linear-gradient(-45deg, var(--pink), var(--pink2), var(--pink), var(--pink2));
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite; */
 }
 
 @keyframes gradient {
@@ -117,8 +113,13 @@ li {
 }
 
 .about {
-  margin: 2% 10%;
+  margin: 0% 10%;
   text-align: justify;
+}
+
+.about-title {
+  color: var(--pink);
+  text-decoration: underline;
 }
 
 .about-mypic {
@@ -160,11 +161,12 @@ li {
 
 /* PORTFOLIO SECTION */
 #portfolio {
-  height: 100vh;
+  color: var(--pink);
+  text-decoration: underline;
 }
 
 .portfolio-carousel {
-  background-color: var(--pink);
+  /* padding: 0 10%; */
 }
 
 .portfolio-carousel-images {
@@ -190,9 +192,13 @@ li {
   margin: 5%;
 }
 
+.skills-title {
+  color: var(--pink);
+  text-decoration: underline;
+}
+
 .skills-ul {
   margin: 2% 20%;
-
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -212,6 +218,11 @@ li {
 .contact-form {
   padding: 5% 20%;
   padding-bottom: 10%;
+}
+
+.contact-form-title {
+  color: var(--pink);
+  text-decoration: underline;
 }
 
 .contact-form-textarea {
