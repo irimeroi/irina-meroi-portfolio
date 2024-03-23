@@ -25,7 +25,7 @@ function HeroSection() {
                     (<h2 className="hs-main-welcomeText text-center" >Hi {name}, welcome to my portfolio!</h2>) :
                     (<h2 className="hs-main-welcomeText text-center" >Hi, welcome to my portfolio!</h2>)}
             </form>
-            <i className="fa-solid fa-arrow-down-long d-flex justify-content-center p-5"></i>
+            {/* <i className="fa-solid fa-arrow-down-long d-flex justify-content-center p-5"></i> */}
         </main>
     )
 }
