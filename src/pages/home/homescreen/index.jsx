@@ -3,6 +3,7 @@ import AboutMe from "../AboutMe";
 import Portfolio from "../Portfolio";
 import ContactMe from "../ContactMe";
 import Skills from "../Skills";
+import BackToTopButton from "../../../components/BackToTopButton";
 
 export default function Home() {
     return(
@@ -12,6 +13,7 @@ export default function Home() {
             <Portfolio />
             <Skills />
             <ContactMe />
+            <BackToTopButton />
         </>
     );
 }

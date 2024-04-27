@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Navbar() {
     const [display, setDisplay] = useState(false);
 
     return (
-        <nav className="d-flex justify-content-around align-items-end fixed-top">
+        <nav className="hide nav d-flex justify-content-around align-items-end">
             <ul className="nav-btns d-flex justify-content-around" style={{ transform: display ? "translateX(0px)" : "" }}>
                 <li><a href="/#about" className="nav-links">About</a></li>
                 <li><a href="/#portfolio" className="nav-links">Portfolio</a></li>
@@ -13,7 +13,6 @@ function Navbar() {
             </ul>
             <i className="fa-solid fa-bars nav-icon" onClick={() => setDisplay(!display)} ></i>
         </nav>
-
     )
 }
 

@@ -9,8 +9,8 @@ function Portfolio() {
     };
 
     return (
-        <section>
-            <h3 id="portfolio" className="text-center">Portfolio</h3>
+        <section id="portfolio">
+            <h3 id="portfolio-title" className="text-center">Portfolio</h3>
             <p className="text-center">Click on the slide to view all my projects!</p>
             <Carousel className="portfolio-carousel" activeIndex={index} onSelect={handleSelect}>
                 <Carousel.Item>
@@ -41,8 +41,8 @@ function Portfolio() {
                     <img className="portfolio-carousel-images" src="assets/images/Weather.png" />
                     <Carousel.Caption className="portfolio-carousel-caption">
                         <h3 className="portfolio-carousel-caption-text">Weather Website</h3>
-                        <a href='https://irimeroi.github.io/weather-website/'>Check out the app!<br /></a>
-                        <a href='https://github.com/irimeroi/weather-website'>Or go to the Github repo</a>
+                        <a className="text-white" href='https://irimeroi.github.io/weather-website/'>Check out the app!<br /></a>
+                        <a className="text-white" href='https://github.com/irimeroi/weather-website'>Or go to the Github repo</a>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
