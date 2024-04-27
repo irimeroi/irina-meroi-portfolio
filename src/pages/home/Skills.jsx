@@ -1,7 +1,7 @@
 function Skills() {
     return (
-        <section className="skills">
-            <h3 className="skills-title text-center" id="skills">Skills</h3>
+        <section id="skills">
+            <h3 className="skills-title text-center">Skills</h3>
             <ul className="skills-ul text-center">
                 <li className="skills-ul-li">CSS</li>
                 <li className="skills-ul-li">Bootstrap</li>

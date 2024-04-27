@@ -1,6 +1,6 @@
 function AboutMe() {
     return (
-        <section id="about" className="about">
+        <section id="about">
             <h3 className="about-title text-center">About me</h3>
             <img className="about-mypic" src="assets/images/im.png" />
             <ul className="d-flex justify-content-center">
@@ -17,6 +17,4 @@ function AboutMe() {
 }
 
 // Strong preference and proficiency in front-end development, complemented by a comprehensive understanding of back-end systems.
-
-
 export default AboutMe;
